@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Revenda.Bebidas.WebApi", "Revenda.Bebidas.WebApi\Revenda.Bebidas.WebApi.csproj", "{94314290-4C94-42B0-97E1-4282245F0500}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 Core", "0 Core", "{26B1204F-F376-49D9-9CA7-6B1B5855D3CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Revenda.Bebidas.BFF.Application", "Revenda.Bebidas.BFF.Application\Revenda.Bebidas.BFF.Application.csproj", "{BDC38CEC-B920-4A43-8F34-7925999509B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94314290-4C94-42B0-97E1-4282245F0500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94314290-4C94-42B0-97E1-4282245F0500}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94314290-4C94-42B0-97E1-4282245F0500}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94314290-4C94-42B0-97E1-4282245F0500}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDC38CEC-B920-4A43-8F34-7925999509B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDC38CEC-B920-4A43-8F34-7925999509B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDC38CEC-B920-4A43-8F34-7925999509B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDC38CEC-B920-4A43-8F34-7925999509B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BDC38CEC-B920-4A43-8F34-7925999509B5} = {26B1204F-F376-49D9-9CA7-6B1B5855D3CA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD0A0552-20AA-4189-976F-2C04BEA5CF31}
+	EndGlobalSection
+EndGlobal
