@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Revenda.Bebidas.BFF.Application\Revenda.Bebidas.BFF.Application.csproj" />
+    <ProjectReference Include="..\Revenda.Bebidas.BFF.Infra.DbAdapter\Revenda.Bebidas.BFF.Infra.DbAdapter.csproj" />
   </ItemGroup>
 
 </Project>

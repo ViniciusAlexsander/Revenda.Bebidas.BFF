@@ -3,11 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Revenda.Bebidas.WebApi", "Revenda.Bebidas.WebApi\Revenda.Bebidas.WebApi.csproj", "{94314290-4C94-42B0-97E1-4282245F0500}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Revenda.Bebidas.WebApi", "Revenda.Bebidas.WebApi\Revenda.Bebidas.WebApi.csproj", "{94314290-4C94-42B0-97E1-4282245F0500}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 Core", "0 Core", "{26B1204F-F376-49D9-9CA7-6B1B5855D3CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Revenda.Bebidas.BFF.Application", "Revenda.Bebidas.BFF.Application\Revenda.Bebidas.BFF.Application.csproj", "{BDC38CEC-B920-4A43-8F34-7925999509B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Revenda.Bebidas.BFF.Application", "Revenda.Bebidas.BFF.Application\Revenda.Bebidas.BFF.Application.csproj", "{BDC38CEC-B920-4A43-8F34-7925999509B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Infra", "1 Infra", "{D17B55D6-BFE2-4C29-AC9F-E0B305595D33}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 Presentation", "2 Presentation", "{F4767DCF-5E9B-419C-88AC-D4E22E8EC393}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Revenda.Bebidas.BFF.Infra.DbAdapter", "Revenda.Bebidas.BFF.Infra.DbAdapter\Revenda.Bebidas.BFF.Infra.DbAdapter.csproj", "{36CB28E1-E096-4739-8B68-7C2B37092395}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Revenda.Bebidas.BFF.Domain", "Revenda.Bebidas.BFF.Domain\Revenda.Bebidas.BFF.Domain.csproj", "{103B6AFD-657F-4E94-A5B3-1CFBADB2A773}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,12 +31,23 @@ Global
 		{BDC38CEC-B920-4A43-8F34-7925999509B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDC38CEC-B920-4A43-8F34-7925999509B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDC38CEC-B920-4A43-8F34-7925999509B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36CB28E1-E096-4739-8B68-7C2B37092395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36CB28E1-E096-4739-8B68-7C2B37092395}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36CB28E1-E096-4739-8B68-7C2B37092395}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36CB28E1-E096-4739-8B68-7C2B37092395}.Release|Any CPU.Build.0 = Release|Any CPU
+		{103B6AFD-657F-4E94-A5B3-1CFBADB2A773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{103B6AFD-657F-4E94-A5B3-1CFBADB2A773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{103B6AFD-657F-4E94-A5B3-1CFBADB2A773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{103B6AFD-657F-4E94-A5B3-1CFBADB2A773}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{94314290-4C94-42B0-97E1-4282245F0500} = {F4767DCF-5E9B-419C-88AC-D4E22E8EC393}
 		{BDC38CEC-B920-4A43-8F34-7925999509B5} = {26B1204F-F376-49D9-9CA7-6B1B5855D3CA}
+		{36CB28E1-E096-4739-8B68-7C2B37092395} = {D17B55D6-BFE2-4C29-AC9F-E0B305595D33}
+		{103B6AFD-657F-4E94-A5B3-1CFBADB2A773} = {26B1204F-F376-49D9-9CA7-6B1B5855D3CA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CD0A0552-20AA-4189-976F-2C04BEA5CF31}
