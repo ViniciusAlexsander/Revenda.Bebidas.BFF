@@ -3,6 +3,7 @@ using Revenda.Bebidas.BFF.Application;
 using Revenda.Bebidas.BFF.Application.DependencyInjection;
 using Revenda.Bebidas.BFF.Infra.DbAdapter;
 using Revenda.Bebidas.BFF.Infra.DbAdapter.DependencyInjection;
+using Revenda.Bebidas.WebApi.Middlewares;
 using System.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -38,6 +39,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 app.MapControllers();
 
