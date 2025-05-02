@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Revenda.Bebidas.BFF.Application.UseCases.Interfaces;
+using Revenda.Bebidas.BFF.Application.UseCases.Pedidos;
 using Revenda.Bebidas.BFF.Application.UseCases.Revendas;
 using System.Diagnostics.CodeAnalysis;
 
@@ -23,6 +24,7 @@ namespace Revenda.Bebidas.BFF.Application.DependencyInjection
             services.AddSingleton(applicationConfiguration);
 
             services.AddScoped<ICadastrarRevendas, CadastrarRevendas>();
+            services.AddScoped<ICriarPedidoCliente, CriarPedidoCliente>();
             return services;
         }
     }

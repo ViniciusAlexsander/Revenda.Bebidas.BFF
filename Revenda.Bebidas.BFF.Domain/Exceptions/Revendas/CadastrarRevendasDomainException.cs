@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Runtime.Serialization;
 
 namespace Revenda.Bebidas.BFF.Domain.Exceptions.Revendas
 {
@@ -23,7 +18,7 @@ namespace Revenda.Bebidas.BFF.Domain.Exceptions.Revendas
 
     public class CadastrarRevendasCoreError : DomainError
     {
-        protected CadastrarRevendasCoreError(string key, string message): base(key, message) { }
+        protected CadastrarRevendasCoreError(string key, string message) : base(key, message) { }
 
         public static CadastrarRevendasCoreError CnpjInvalido =>
             new("CnpjInvalido",

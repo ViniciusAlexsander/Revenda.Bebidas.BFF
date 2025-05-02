@@ -12,15 +12,16 @@ namespace Revenda.Bebidas.BFF.Infra.DbAdapter
 
         private static readonly string INSERIR_REVENDA = @"
             INSERT INTO
-            public.revenda 
-                (cnpj, 
-                razaosocial, 
-                nomefantasia, 
+            public.revendas 
+                (id, 
+                cnpj, 
+                razao_social, 
+                nome_fantasia, 
                 email, 
                 telefone, 
-                nomecontato, 
-                enderecoentrega)
-            VALUES(@Cnpj, @RazaoSocial, @NomeFantasia, @Email, @Telefone, @NomeContato, @EnderecoEntrega);
+                nome_contato, 
+                endereco_entrega)
+            VALUES(uuid_generate_v4(), @Cnpj, @RazaoSocial, @NomeFantasia, @Email, @Telefone, @NomeContato, @EnderecoEntrega);
         ";
 
         public async Task InserirRevenda(RevendaModel revendaModel)
