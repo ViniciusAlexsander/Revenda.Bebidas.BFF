@@ -1,6 +1,7 @@
 ﻿using Revenda.Bebidas.BFF.Application.Ports.Pedidos;
 using Revenda.Bebidas.BFF.Application.UseCases.Interfaces;
 using Revenda.Bebidas.BFF.Domain.Adapters;
+using Revenda.Bebidas.BFF.Domain.Enums;
 using Revenda.Bebidas.BFF.Domain.Models.Clientes;
 using Revenda.Bebidas.BFF.Domain.Models.Pedidos;
 using Revenda.Bebidas.BFF.Domain.Models.Revenda;
@@ -33,7 +34,7 @@ namespace Revenda.Bebidas.BFF.Application.UseCases.Pedidos
             {
                 ClienteId = novoCliente.Id,
                 RevendaId = input.RevendaId,
-                Status = "Pendente",
+                Status = StatusPedido.Pendente.ToString(),
             });
 
             await _itensPedidoDbAdapter.InserirItensPedido(input.Produtos.Select(p => new ItensPedidoModel

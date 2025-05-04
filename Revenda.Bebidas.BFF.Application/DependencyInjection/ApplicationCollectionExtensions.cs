@@ -25,6 +25,8 @@ namespace Revenda.Bebidas.BFF.Application.DependencyInjection
 
             services.AddScoped<ICadastrarRevendas, CadastrarRevendas>();
             services.AddScoped<ICriarPedidoCliente, CriarPedidoCliente>();
+            services.AddScoped<ICriarPedidoFabrica, CriarPedidoFabrica>();
+
             return services;
         }
     }

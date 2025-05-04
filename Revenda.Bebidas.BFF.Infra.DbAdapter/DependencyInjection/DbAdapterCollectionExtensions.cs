@@ -16,6 +16,8 @@ namespace Revenda.Bebidas.BFF.Infra.DbAdapter.DependencyInjection
             services.AddScoped<IClientesDbAdapter, ClientesDbAdapter>();
             services.AddScoped<IPedidosDbAdapter, PedidosDbAdapter>();
             services.AddScoped<IItensPedidoDbAdapter, ItensPedidoDbAdapter>();
+            services.AddScoped<IPedidosFabricaDbAdapter, PedidosFabricaDbAdapter>();
+            services.AddScoped<IPedidosFabricaParaPedidosClientesDbAdapter, PedidosFabricaParaPedidosClientesDbAdapter>();
 
             return services;
         }

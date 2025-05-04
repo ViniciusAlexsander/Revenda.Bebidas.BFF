@@ -10,10 +10,13 @@ namespace Revenda.Bebidas.WebApi.Controllers
     public class PedidosController : ControllerBase
     {
         private readonly ICriarPedidoCliente _criarPedidoCliente;
-        public PedidosController(ICriarPedidoCliente criarPedidoCliente)
+        private readonly ICriarPedidoFabrica _criarPedidoFabrica;
+        public PedidosController(ICriarPedidoCliente criarPedidoCliente, ICriarPedidoFabrica criarPedidoFabrica)
         {
             _criarPedidoCliente = criarPedidoCliente ??
                 throw new ArgumentNullException(nameof(criarPedidoCliente));
+            _criarPedidoFabrica = criarPedidoFabrica ??
+                throw new ArgumentNullException(nameof(criarPedidoFabrica));
         }
 
         [HttpPost("clientes")]
@@ -36,6 +39,16 @@ namespace Revenda.Bebidas.WebApi.Controllers
             });
 
             return Created("", response);
+        }
+
+        [HttpPost("fabrica")]
+        public async Task<IActionResult> Criar([FromBody] PostPedidoFabrica postPedidoFabrica)
+        {
+            string result = await _criarPedidoFabrica.Execute(new CriarPedidoFabricaInput
+            {
+                RevendaId = postPedidoFabrica.RevendaId
+            });
+            return Ok(new { mensagem = result });
         }
     }
 }

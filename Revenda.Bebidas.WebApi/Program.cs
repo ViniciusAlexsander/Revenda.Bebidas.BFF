@@ -3,6 +3,7 @@ using Revenda.Bebidas.BFF.Application;
 using Revenda.Bebidas.BFF.Application.DependencyInjection;
 using Revenda.Bebidas.BFF.Infra.DbAdapter;
 using Revenda.Bebidas.BFF.Infra.DbAdapter.DependencyInjection;
+using Revenda.Bebidas.BFF.Infra.Services;
 using Revenda.Bebidas.WebApi.Middlewares;
 using System.Data;
 
@@ -25,6 +26,8 @@ builder.Services.AddScoped<IDbConnection>(sp =>
 });
 
 builder.Services.AddApplication(builder.Configuration.Get<ApplicationConfiguration>());
+
+builder.Services.AddHostedService<FilaPedidosBackgroundService>();
 
 var app = builder.Build();
 

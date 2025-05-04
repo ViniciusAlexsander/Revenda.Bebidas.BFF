@@ -13,9 +13,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Infra", "1 Infra", "{D17B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 Presentation", "2 Presentation", "{F4767DCF-5E9B-419C-88AC-D4E22E8EC393}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Revenda.Bebidas.BFF.Infra.DbAdapter", "Revenda.Bebidas.BFF.Infra.DbAdapter\Revenda.Bebidas.BFF.Infra.DbAdapter.csproj", "{36CB28E1-E096-4739-8B68-7C2B37092395}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Revenda.Bebidas.BFF.Infra.DbAdapter", "Revenda.Bebidas.BFF.Infra.DbAdapter\Revenda.Bebidas.BFF.Infra.DbAdapter.csproj", "{36CB28E1-E096-4739-8B68-7C2B37092395}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Revenda.Bebidas.BFF.Domain", "Revenda.Bebidas.BFF.Domain\Revenda.Bebidas.BFF.Domain.csproj", "{103B6AFD-657F-4E94-A5B3-1CFBADB2A773}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Revenda.Bebidas.BFF.Domain", "Revenda.Bebidas.BFF.Domain\Revenda.Bebidas.BFF.Domain.csproj", "{103B6AFD-657F-4E94-A5B3-1CFBADB2A773}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{62041A97-7E08-4FFB-AE4D-F3AF14FBC109}"
+	ProjectSection(SolutionItems) = preProject
+		config.json = config.json
+		docker-compose.yaml = docker-compose.yaml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Revenda.Bebidas.BFF.Infra.Services", "Revenda.Bebidas.BFF.Infra.BackgroundService\Revenda.Bebidas.BFF.Infra.Services.csproj", "{84D889FB-E485-4EF3-80C3-677BC04758A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +47,10 @@ Global
 		{103B6AFD-657F-4E94-A5B3-1CFBADB2A773}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{103B6AFD-657F-4E94-A5B3-1CFBADB2A773}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{103B6AFD-657F-4E94-A5B3-1CFBADB2A773}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84D889FB-E485-4EF3-80C3-677BC04758A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84D889FB-E485-4EF3-80C3-677BC04758A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84D889FB-E485-4EF3-80C3-677BC04758A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84D889FB-E485-4EF3-80C3-677BC04758A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +60,7 @@ Global
 		{BDC38CEC-B920-4A43-8F34-7925999509B5} = {26B1204F-F376-49D9-9CA7-6B1B5855D3CA}
 		{36CB28E1-E096-4739-8B68-7C2B37092395} = {D17B55D6-BFE2-4C29-AC9F-E0B305595D33}
 		{103B6AFD-657F-4E94-A5B3-1CFBADB2A773} = {26B1204F-F376-49D9-9CA7-6B1B5855D3CA}
+		{84D889FB-E485-4EF3-80C3-677BC04758A5} = {D17B55D6-BFE2-4C29-AC9F-E0B305595D33}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CD0A0552-20AA-4189-976F-2C04BEA5CF31}
